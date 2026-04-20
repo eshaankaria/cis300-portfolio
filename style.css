@@ -1,0 +1,131 @@
+/* Eshaan Karia — Portfolio (CIS300)
+   5+ selectors, 15+ properties */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    border-bottom: 1px solid #1f1f1f;
+    position: sticky;
+    top: 0;
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: #ffffff;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+}
+
+.hero {
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #2a2a2a;
+    border-radius: 999px;
+    font-size: 13px;
+    color: #b0b0b0;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    background: linear-gradient(180deg, #ffffff 0%, #a0a0a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lede {
+    font-size: 18px;
+    color: #c0c0c0;
+    max-width: 640px;
+    margin: 0 auto 36px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.15s ease;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+}
+
+.intro {
+    padding-top: 64px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    margin: 0 0 16px;
+}
+
+.intro p {
+    color: #c0c0c0;
+    margin: 0 0 16px;
+}
+
+.intro a {
+    color: #9ec5ff;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 32px;
+    color: #707070;
+    font-size: 14px;
+    border-top: 1px solid #1a1a1a;
+}

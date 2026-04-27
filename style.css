@@ -1,5 +1,4 @@
-/* Eshaan Karia — Portfolio (CIS300)
-   5+ selectors, 15+ properties */
+/* Eshaan Karia — Portfolio (CIS300) */
 
 body {
     margin: 0;
@@ -128,4 +127,154 @@ h1 {
     color: #707070;
     font-size: 14px;
     border-top: 1px solid #1a1a1a;
+}
+
+/* Inner pages: about, work, contact */
+
+.page-head {
+    text-align: center;
+    padding-bottom: 64px;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 64px;
+}
+
+.page-head h1 {
+    font-size: 48px;
+}
+
+.email-line {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.email-line a {
+    color: #9ec5ff;
+    text-decoration: none;
+    border-bottom: 1px solid #2a3a5a;
+    padding-bottom: 2px;
+}
+
+.prose h2 {
+    font-size: 24px;
+    margin: 48px 0 12px;
+    color: #ffffff;
+}
+
+.prose p {
+    color: #c0c0c0;
+    margin: 0 0 16px;
+}
+
+.prose a {
+    color: #9ec5ff;
+}
+
+/* Projects table (work.html) */
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 32px 0 16px;
+}
+
+table.projects {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+table.projects caption {
+    text-align: left;
+    color: #909090;
+    padding: 0 0 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+table.projects th,
+table.projects td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+table.projects th {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #141414;
+}
+
+table.projects tbody tr:hover {
+    background-color: #111111;
+}
+
+/* Contact form (contact.html) */
+
+.contact-form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 560px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field label {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+.field input,
+.field textarea,
+.field select {
+    background-color: #141414;
+    border: 1px solid #2a2a2a;
+    color: #f5f5f5;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.15s ease;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    outline: none;
+    border-color: #4a6a9a;
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button.cta {
+    align-self: flex-start;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        padding: 16px 20px;
+    }
+
+    main {
+        padding: 48px 20px 80px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .page-head h1 {
+        font-size: 36px;
+    }
 }

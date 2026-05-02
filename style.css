@@ -208,6 +208,30 @@ table.projects tbody tr:hover {
     background-color: #111111;
 }
 
+/* Video block (work.html) */
+
+.video-wrap {
+    margin: 32px 0 16px;
+    padding: 0;
+}
+
+.video-wrap video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #1f1f1f;
+    background-color: #000;
+    display: block;
+}
+
+.video-wrap figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #808080;
+    text-align: left;
+}
+
 /* Contact form (contact.html) */
 
 .contact-form {
